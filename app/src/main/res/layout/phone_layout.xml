@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/phone_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="8-800-888-88-88"
+        android:textSize="40dp"
+        android:layout_centerInParent="true"
+        />
+
+    <include
+        android:id="@+id/num_layout"
+        layout="@layout/num_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/bottom_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <include
+        android:id="@+id/bottom_layout"
+        layout="@layout/buttom_layout"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>
