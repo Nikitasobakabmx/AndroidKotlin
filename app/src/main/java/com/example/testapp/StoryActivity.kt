@@ -18,11 +18,11 @@ class StoryActivity : Activity(){
 
     // bottom button
     fun phoneClick(view: View){
-        var nextAct: Intent = Intent(null, PhoneActivity::class.java)
+        var nextAct = Intent(this, PhoneActivity::class.java)
         startActivity(nextAct)
     }
     fun contactsClick(view: View){
-        var nextAct: Intent = Intent(this, ContactActivity::class.java)
+        var nextAct= Intent(this, ContactActivity::class.java)
         startActivity(nextAct)
     }
     fun storyClick(view: View){
